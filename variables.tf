@@ -9,7 +9,42 @@ variable "aws_secret_key" {}
 variable "aws_region" {
   type        = string
   description = "La region donde vamos a desplegar la infraestructura"
-  default     = "us-east-1"
+  default     = "us-east-2" # Ohio ping:92 ms
+  nullable    = false
+}
+
+variable "cidr_vpc" {
+  type        = string
+  description = "Bloque CIDR para la VPC"
+  default     = "10.0.0.0/16"
+  nullable    = false
+}
+
+variable "aws_zone_1" {
+  type        = string
+  description = "La zona 1 donde vamos a desplegar la infraestructura"
+  default     = "us-east-2a" # Ohio ping:92 ms
+  nullable    = false
+}
+
+variable "cidr_subnet_1" {
+  type        = string
+  description = "Bloque CIDR para la subnet 1"
+  default     = "10.0.4.0/24"
+  nullable    = false
+}
+
+variable "aws_zone_2" {
+  type        = string
+  description = "La zona 2 donde vamos a desplegar la infraestructura"
+  default     = "us-east-2b" # Ohio ping:92 ms
+  nullable    = false
+}
+
+variable "cidr_subnet_2" {
+  type        = string
+  description = "Bloque CIDR para la subnet 2"
+  default     = "10.0.5.0/24"
   nullable    = false
 }
 

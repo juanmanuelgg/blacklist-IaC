@@ -11,6 +11,10 @@ terraform plan -out=plan.tfplan
 terraform apply plan.tfplan
 # Imprimir las outputs, si aplica
 terraform output -json > ../output.json
+# If you have the Graphviz dot command already installed, you can render a PNG image by piping into that command:
+# sudo apt install graphviz
+$ terraform graph -draw-cycles -type=plan | dot -Tpng > docs/graph.png
+
 # Destruir la infraestructura asociada a este codigo
 terraform destroy
 ```
