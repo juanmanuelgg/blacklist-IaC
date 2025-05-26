@@ -13,8 +13,9 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
+| <a name="module_beanstalk"></a> [beanstalk](#module\_beanstalk) | ./modules/beanstalk | n/a |
 | <a name="module_db"></a> [db](#module\_db) | ./modules/db | n/a |
-| <a name="module_network_lite"></a> [network\_lite](#module\_network\_lite) | ./modules/network-lite | n/a |
+| <a name="module_network"></a> [network](#module\_network) | ./modules/network | n/a |
 
 ## Resources
 

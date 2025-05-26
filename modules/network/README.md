@@ -18,6 +18,7 @@ No requirements.
 
 | Name | Type |
 |------|------|
+| [aws_security_group.eb_security_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
 | [aws_security_group.security_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
 | [aws_availability_zones.available](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/availability_zones) | data source |
 
@@ -31,5 +32,8 @@ No requirements.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_eb_security_group_id"></a> [eb\_security\_group\_id](#output\_eb\_security\_group\_id) | ID del grupo de seguridad para Elastic Beanstalk. |
+| <a name="output_private_subnets"></a> [private\_subnets](#output\_private\_subnets) | Subnets privadas de la red. |
 | <a name="output_public_subnets"></a> [public\_subnets](#output\_public\_subnets) | Subnets publicas de la red. |
 | <a name="output_security_group_id"></a> [security\_group\_id](#output\_security\_group\_id) | ID del grupo de seguridad. |
+| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | ID de la VPC. |
